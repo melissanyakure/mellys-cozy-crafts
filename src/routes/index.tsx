@@ -12,6 +12,12 @@ import sunsetShorts from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.38_PM_3.jpe
 import cozyCardigan from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.39_PM.jpeg.asset.json";
 import bowPouch from "@/assets/WhatsApp_Image_2026-08-27_at_7.54.36_PM.jpeg.asset.json";
 import makerPortrait from "@/assets/WhatsApp_Image_2026-08-27_at_7.54.37_PM.jpeg.asset.json";
+import blackCardigan from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.35_PM.jpeg.asset.json";
+import smileyKeychains from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.36_PM_3.jpeg.asset.json";
+import lilacClutch from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.36_PM_4.jpeg.asset.json";
+import blueSetFlatlay from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.36_PM_5.jpeg.asset.json";
+import blossomCable from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.36_PM_7.jpeg.asset.json";
+import blackBowPouch from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.37_PM.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -28,19 +34,19 @@ export const Route = createFileRoute("/")({
 });
 
 const products = [
-  { name: "Chunky Black Cropped Cardigan", description: "A cozy statement layer with oversized bell sleeves, a ribbed yoke, and a beautifully substantial texture.", materials: "Premium acrylic yarn", image: cozyCardigan.url, position: "object-[52%_center]" },
-  { name: "Ocean Blue Halter Set", description: "A breezy two-piece with a flower-detailed halter, airy latticework, and soft striped shorts.", materials: "Soft cotton-blend yarn", image: blueSet.url, position: "object-center" },
+  { name: "Chunky Black Cropped Cardigan", description: "A cozy statement layer with oversized bell sleeves, a ribbed yoke, and a beautifully substantial texture.", materials: "Premium acrylic yarn", image: blackCardigan.url, position: "object-center" },
+  { name: "Ocean Blue Halter Set", description: "A breezy two-piece with a flower-detailed halter, airy latticework, and soft striped shorts.", materials: "Soft cotton-blend yarn", image: blueSetFlatlay.url, position: "object-center" },
   { name: "Black Scalloped Crop Top", description: "A flattering deep-V silhouette, finished with a tie front and delicate scalloped edging.", materials: "Cotton-blend yarn", image: wineTop.url, position: "object-center" },
   { name: "Navy & Sky Blue Striped Shorts", description: "Bold, easygoing stripes meet a comfortable adjustable drawstring waist.", materials: "Soft acrylic yarn", image: blueMirror.url, position: "object-center" },
-  { name: "Smiley Face Keychains", description: "Pocket-sized amigurumi friends, each stitched with its own sweet embroidered expression.", materials: "Cotton yarn & fiberfill", image: bowPouch.url, position: "object-center" },
+  { name: "Smiley Face Keychains", description: "Pocket-sized amigurumi friends, each stitched with its own sweet embroidered expression.", materials: "Cotton yarn & fiberfill", image: smileyKeychains.url, position: "object-center" },
   { name: "Sunset Starfish Shorts Set", description: "A fiery red-and-orange halter set made playful with a hand-stitched starfish appliqué.", materials: "Cotton-blend yarn", image: sunsetSet.url, position: "object-center" },
-  { name: "Lilac Patchwork Clutch", description: "A softly structured purple-and-cream pouch with nostalgic patternwork and button closures.", materials: "Acrylic yarn & buttons", image: bowPouch.url, position: "object-center" },
-  { name: "Vine & Blossom Cable Cozy", description: "A charming leafy wrap dotted with purple blossoms to make everyday charging feel special.", materials: "Fine cotton yarn", image: cozyCardigan.url, position: "object-[65%_center]" },
+  { name: "Lilac Patchwork Clutch", description: "A softly structured purple-and-cream pouch with nostalgic patternwork and button closures.", materials: "Acrylic yarn & buttons", image: lilacClutch.url, position: "object-center" },
+  { name: "Vine & Blossom Cable Cozy", description: "A charming leafy wrap dotted with purple blossoms to make everyday charging feel special.", materials: "Fine cotton yarn", image: blossomCable.url, position: "object-center" },
   { name: "Monochrome Stripe Skirt Set", description: "Graphic black-and-white stripes paired with a romantic openwork lace crop top.", materials: "Cotton-blend yarn", image: monochrome.url, position: "object-center" },
   { name: "Cream Lace Crop Top", description: "A delicate openwork floral top with a soft tie front—light, romantic, and easy to layer.", materials: "Fine cotton yarn", image: monochrome.url, position: "object-[50%_25%]" },
   { name: "Rust Granny-Square Cardigan", description: "Warm rust and cream motifs come together in a nostalgic, relaxed patchwork layer.", materials: "Soft acrylic yarn", image: cozyCardigan.url, position: "object-center" },
   { name: "Wine Ribbed Halter Top", description: "A rich maroon bralette with sculpted ribbing and adjustable twisted ties.", materials: "Cotton-blend yarn", image: wineTop.url, position: "object-center" },
-  { name: "Bow Drawstring Pouch", description: "A petite handmade pouch finished with playful pink bows and a secure drawstring top.", materials: "Acrylic yarn", image: bowPouch.url, position: "object-center" },
+  { name: "Bow Drawstring Pouch", description: "A petite handmade pouch finished with playful pink bows and a secure drawstring top.", materials: "Acrylic yarn", image: blackBowPouch.url, position: "object-center" },
 ];
 
 const contactSchema = z.object({
