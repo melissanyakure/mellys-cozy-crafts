@@ -18,6 +18,8 @@ import lilacClutch from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.36_PM_4.jpeg
 import blueSetFlatlay from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.36_PM_5.jpeg.asset.json";
 import blossomCable from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.36_PM_7.jpeg.asset.json";
 import blackBowPouch from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.37_PM.jpeg.asset.json";
+import blackScallopedTop from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.38_PM.jpeg.asset.json";
+import stripedShortsFlatlay from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.37_PM_1.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -36,8 +38,8 @@ export const Route = createFileRoute("/")({
 const products = [
   { name: "Chunky Black Cropped Cardigan", description: "A cozy statement layer with oversized bell sleeves, a ribbed yoke, and a beautifully substantial texture.", materials: "Premium acrylic yarn", image: blackCardigan.url, position: "object-center" },
   { name: "Ocean Blue Halter Set", description: "A breezy two-piece with a flower-detailed halter, airy latticework, and soft striped shorts.", materials: "Soft cotton-blend yarn", image: blueSetFlatlay.url, position: "object-center" },
-  { name: "Black Scalloped Crop Top", description: "A flattering deep-V silhouette, finished with a tie front and delicate scalloped edging.", materials: "Cotton-blend yarn", image: wineTop.url, position: "object-center" },
-  { name: "Navy & Sky Blue Striped Shorts", description: "Bold, easygoing stripes meet a comfortable adjustable drawstring waist.", materials: "Soft acrylic yarn", image: blueMirror.url, position: "object-center" },
+  { name: "Black Scalloped Crop Top", description: "A flattering deep-V silhouette, finished with a tie front and delicate scalloped edging.", materials: "Cotton-blend yarn", image: blackScallopedTop.url, position: "object-center" },
+  { name: "Navy & Sky Blue Striped Shorts", description: "Bold, easygoing stripes meet a comfortable adjustable drawstring waist.", materials: "Soft acrylic yarn", image: stripedShortsFlatlay.url, position: "object-center" },
   { name: "Smiley Face Keychains", description: "Pocket-sized amigurumi friends, each stitched with its own sweet embroidered expression.", materials: "Cotton yarn & fiberfill", image: smileyKeychains.url, position: "object-center" },
   { name: "Sunset Starfish Shorts Set", description: "A fiery red-and-orange halter set made playful with a hand-stitched starfish appliqué.", materials: "Cotton-blend yarn", image: sunsetSet.url, position: "object-center" },
   { name: "Lilac Patchwork Clutch", description: "A softly structured purple-and-cream pouch with nostalgic patternwork and button closures.", materials: "Acrylic yarn & buttons", image: lilacClutch.url, position: "object-center" },
