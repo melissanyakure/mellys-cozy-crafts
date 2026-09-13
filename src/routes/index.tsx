@@ -4,7 +4,7 @@ import { type FormEvent, useState } from "react";
 import { z } from "zod";
 import { SiteButton } from "@/components/site-button";
 import blueSet from "@/assets/WhatsApp_Image_2026-08-27_at_7.43.16_PM_1.jpeg.asset.json";
-import blueMirror from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.38_PM_1.jpeg.asset.json";
+
 import monochrome from "@/assets/WhatsApp_Image_2026-08-27_at_7.43.16_PM.jpeg.asset.json";
 import wineTop from "@/assets/WhatsApp_Image_2026-08-27_at_7.43.15_PM.jpeg.asset.json";
 import sunsetSet from "@/assets/WhatsApp_Image_2026-08-27_at_7.32.38_PM_2.jpeg.asset.json";
