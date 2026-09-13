@@ -111,7 +111,7 @@ function Index() {
             <article key={product.name} className="stitch-card group flex flex-col overflow-hidden bg-card">
               <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                 <img src={product.image} alt={product.name} className={`h-full w-full object-cover ${("position" in product && product.position) || "object-center"} transition-transform duration-500 group-hover:scale-[1.025]`} loading={index < 3 ? "eager" : "lazy"} />
-                <div className="absolute left-3 top-3 flex gap-2"><span className="rounded-full bg-card/95 px-3 py-1.5 text-[10px] font-extrabold text-primary shadow-sm">{product.category}</span>{product.isNew && <span className="rounded-full bg-primary px-3 py-1.5 text-[10px] font-extrabold text-primary-foreground shadow-sm">New</span>}</div>
+                <div className="absolute left-3 top-3 flex gap-2"><span className="rounded-full bg-card/95 px-3 py-1.5 text-[10px] font-extrabold text-primary shadow-sm">{product.category}</span>{"isNew" in product && product.isNew && <span className="rounded-full bg-primary px-3 py-1.5 text-[10px] font-extrabold text-primary-foreground shadow-sm">New</span>}</div>
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-xl font-semibold leading-7">{product.name}</h3>
