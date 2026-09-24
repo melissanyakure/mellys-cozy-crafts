@@ -35,23 +35,23 @@ export const Route = createFileRoute("/")({
 type Category = "All" | "Apparel" | "Accessories" | "Tech Accessories";
 
 const products = [
-  { name: "Two-Piece Ocean Blue Set", category: "Apparel", description: "A vibrant two-piece set with striped shorts and a matching mesh halter top.", details: "Royal blue and sky blue stripes, an open loop-mesh torso, adjustable side ties and a soft white flower appliqué.", image: blueSetFlatlay.url },
-  { name: "Ocean Blue Set — Styled", category: "Apparel", description: "The ocean blue set worn, showing the fit of the mesh bodice and striped shorts.", details: "A flower-detailed neckline, breezy loop mesh through the waist and comfortable high-waisted shorts.", image: blueSet.url },
-  { name: "Ocean Blue Set — Close Up", category: "Apparel", description: "A closer look at the blue mesh bodice and flower detail.", details: "Hand-stitched white flower at the bust, striped bandeau band and open loop mesh through the body.", image: blueSet.url, position: "object-[50%_32%]" },
-  { name: "Black & White Striped Mini Skirt Set", category: "Apparel", description: "A white lace halter top paired with a bold striped mini skirt.", details: "Openwork floral lace, a front tie, scalloped hem and a high-waisted black-and-white skirt.", image: monochrome.url },
-  { name: "Burgundy Mesh Halter Top", category: "Apparel", description: "A deep wine-red halter bralette with an open lattice body.", details: "Ribbed sculpted cups, open lattice mesh and twisted adjustable neck ties.", image: wineTop.url },
-  { name: "Black Mesh Shrug Top", category: "Apparel", description: "A cropped open-work black mesh top with long bell sleeves.", details: "Airy mesh stitch, a wide neckline and roomy bell sleeves—perfect for layering.", image: blackCardigan.url },
-  { name: "Blue Striped High-Waist Shorts", category: "Apparel", description: "Royal and sky blue striped crochet shorts with tie details.", details: "Bold horizontal striping, an eyelet waistband with adjustable ties and a soft finish.", image: stripedShorts.url },
-  { name: "Red & Orange Starfish Set", category: "Apparel", description: "A bright two-piece set with a scalloped halter and starfish shorts.", details: "Deep red with orange shell-stitch trim, a ribbed V-neck and matching appliquéd shorts.", image: sunsetSet.url },
-  { name: "Red & Orange Starfish Shorts", category: "Apparel", description: "Bold red high-waisted crochet shorts with bright orange striping.", details: "A ribbed drawstring waistband, contrast bands and a hand-stitched starfish appliqué.", image: sunsetShorts.url },
-  { name: "Rust & Cream Granny Square Cardigan", category: "Apparel", description: "A vintage-inspired granny square cardigan in warm rust and cream.", details: "Classic floral squares, long sleeves with ribbed cuffs and a relaxed fit.", image: cozyCardigan.url },
-  { name: "Dark Chocolate Lace Halter Top", category: "Apparel", description: "A romantic dark lace halter with a scalloped edge.", details: "Delicate openwork shell stitch, a deep V neckline and front tie fastening.", image: blackScallopedTop.url },
-  { name: "Black & Pink Bow Drawstring Pouch", category: "Accessories", description: "A sweet black drawstring pouch with pink bow details.", details: "A ruffled pink rim, functional cinch drawstring and two stitched bow appliqués.", image: blackBowPouch.url },
-  { name: "Leaf Vine Cable Cover", category: "Tech Accessories", description: "A whimsical green vine wrap for charger cables—or a hanging garland.", details: "It wraps snugly along a charging cable with soft purple flower accents.", image: blossomCable.url },
-  { name: "Purple Plaid Tablet / Laptop Sleeve", category: "Tech Accessories", description: "A padded crochet sleeve in a purple and lilac pattern.", details: "Thick cushioned yarn, a secure top flap and two round contrast buttons.", image: lilacClutch.url },
-  { name: "Smiley Face Plush Keychains", category: "Accessories", description: "Cute little plush charms with hand-stitched expressions.", details: "Soft black plush rounds with pale blue embroidered faces on sturdy metal rings.", image: smileyKeychains.url },
-  { name: "White Crochet Hair Bow", category: "Accessories", description: "A cloud-soft white crochet bow for everyday charm.", details: "A fluffy hand-stitched bow, sweet enough for casual days and dress-up moments.", image: hairBow.url, isNew: true },
-  { name: "Pink Blossom Drawstring Pouch", category: "Accessories", description: "A bright pink drawstring pouch with olive ties and a leafy flourish.", details: "Vibrant crochet with an olive-green cinch tie, perfect for small treasures or gifting.", image: pinkPouch.url, isNew: true },
+  { name: "Two-Piece Ocean Blue Set", category: "Apparel", price: "KSh 3,500", description: "A vibrant two-piece set with striped shorts and a matching mesh halter top.", details: "Royal blue and sky blue stripes, an open loop-mesh torso, adjustable side ties and a soft white flower appliqué.", image: blueSetFlatlay.url },
+  { name: "Ocean Blue Set — Styled", category: "Apparel", price: "KSh 3,500", description: "The ocean blue set worn, showing the fit of the mesh bodice and striped shorts.", details: "A flower-detailed neckline, breezy loop mesh through the waist and comfortable high-waisted shorts.", image: blueSet.url },
+  { name: "Ocean Blue Set — Close Up", category: "Apparel", price: "KSh 1,800", description: "A closer look at the blue mesh bodice and flower detail.", details: "Hand-stitched white flower at the bust, striped bandeau band and open loop mesh through the body.", image: blueSet.url, position: "object-[50%_32%]" },
+  { name: "Black & White Striped Mini Skirt Set", category: "Apparel", price: "KSh 3,800", description: "A white lace halter top paired with a bold striped mini skirt.", details: "Openwork floral lace, a front tie, scalloped hem and a high-waisted black-and-white skirt.", image: monochrome.url },
+  { name: "Burgundy Mesh Halter Top", category: "Apparel", price: "KSh 1,800", description: "A deep wine-red halter bralette with an open lattice body.", details: "Ribbed sculpted cups, open lattice mesh and twisted adjustable neck ties.", image: wineTop.url },
+  { name: "Black Mesh Shrug Top", category: "Apparel", price: "KSh 2,500", description: "A cropped open-work black mesh top with long bell sleeves.", details: "Airy mesh stitch, a wide neckline and roomy bell sleeves—perfect for layering.", image: blackCardigan.url },
+  { name: "Blue Striped High-Waist Shorts", category: "Apparel", price: "KSh 1,800", description: "Royal and sky blue striped crochet shorts with tie details.", details: "Bold horizontal striping, an eyelet waistband with adjustable ties and a soft finish.", image: stripedShorts.url },
+  { name: "Red & Orange Starfish Set", category: "Apparel", price: "KSh 3,500", description: "A bright two-piece set with a scalloped halter and starfish shorts.", details: "Deep red with orange shell-stitch trim, a ribbed V-neck and matching appliquéd shorts.", image: sunsetSet.url },
+  { name: "Red & Orange Starfish Shorts", category: "Apparel", price: "KSh 1,800", description: "Bold red high-waisted crochet shorts with bright orange striping.", details: "A ribbed drawstring waistband, contrast bands and a hand-stitched starfish appliqué.", image: sunsetShorts.url },
+  { name: "Rust & Cream Granny Square Cardigan", category: "Apparel", price: "KSh 4,200", description: "A vintage-inspired granny square cardigan in warm rust and cream.", details: "Classic floral squares, long sleeves with ribbed cuffs and a relaxed fit.", image: cozyCardigan.url },
+  { name: "Dark Chocolate Lace Halter Top", category: "Apparel", price: "KSh 1,600", description: "A romantic dark lace halter with a scalloped edge.", details: "Delicate openwork shell stitch, a deep V neckline and front tie fastening.", image: blackScallopedTop.url },
+  { name: "Black & Pink Bow Drawstring Pouch", category: "Accessories", price: "KSh 850", description: "A sweet black drawstring pouch with pink bow details.", details: "A ruffled pink rim, functional cinch drawstring and two stitched bow appliqués.", image: blackBowPouch.url },
+  { name: "Leaf Vine Cable Cover", category: "Tech Accessories", price: "KSh 650", description: "A whimsical green vine wrap for charger cables—or a hanging garland.", details: "It wraps snugly along a charging cable with soft purple flower accents.", image: blossomCable.url },
+  { name: "Purple Plaid Tablet / Laptop Sleeve", category: "Tech Accessories", price: "KSh 1,500", description: "A padded crochet sleeve in a purple and lilac pattern.", details: "Thick cushioned yarn, a secure top flap and two round contrast buttons.", image: lilacClutch.url },
+  { name: "Smiley Face Plush Keychains", category: "Accessories", price: "KSh 450 each", description: "Cute little plush charms with hand-stitched expressions.", details: "Soft black plush rounds with pale blue embroidered faces on sturdy metal rings.", image: smileyKeychains.url },
+  { name: "White Crochet Hair Bow", category: "Accessories", price: "KSh 350", description: "A cloud-soft white crochet bow for everyday charm.", details: "A fluffy hand-stitched bow, sweet enough for casual days and dress-up moments.", image: hairBow.url },
+  { name: "Pink Blossom Drawstring Pouch", category: "Accessories", price: "KSh 850", description: "A bright pink drawstring pouch with olive ties and a leafy flourish.", details: "Vibrant crochet with an olive-green cinch tie, perfect for small treasures or gifting.", image: pinkPouch.url },
 ] as const;
 
 function Index() {
@@ -101,7 +101,7 @@ function Index() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-primary">The collection</p>
           <h2 className="mt-3 font-display text-4xl font-semibold sm:text-5xl">Portfolio of handmade pieces</h2>
-          <p className="mt-4 text-sm leading-6 text-muted-foreground">Each item is one-of-a-kind and can be remade in any colour scheme or size you like.</p>
+            <p className="mt-4 text-sm leading-6 text-muted-foreground">Each item is one-of-a-kind and can be remade in any colour scheme or size you like. Prices shown are starting prices and may vary by size or yarn choice.</p>
         </div>
         <div className="mt-8 flex flex-wrap justify-center gap-2" aria-label="Filter collection">
           {categories.map((item) => <button key={item} type="button" onClick={() => setCategory(item)} className={`min-h-10 rounded-full border px-5 text-xs font-bold transition-colors ${category === item ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card text-muted-foreground hover:border-primary/50 hover:text-primary"}`}>{item}</button>)}
@@ -111,10 +111,11 @@ function Index() {
             <article key={product.name} className="stitch-card group flex flex-col overflow-hidden bg-card">
               <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                 <img src={product.image} alt={product.name} className={`h-full w-full object-cover ${("position" in product && product.position) || "object-center"} transition-transform duration-500 group-hover:scale-[1.025]`} loading={index < 3 ? "eager" : "lazy"} />
-                <div className="absolute left-3 top-3 flex gap-2"><span className="rounded-full bg-card/95 px-3 py-1.5 text-[10px] font-extrabold text-primary shadow-sm">{product.category}</span>{"isNew" in product && product.isNew && <span className="rounded-full bg-primary px-3 py-1.5 text-[10px] font-extrabold text-primary-foreground shadow-sm">New</span>}</div>
+                <div className="absolute left-3 top-3"><span className="rounded-full bg-card/95 px-3 py-1.5 text-[10px] font-extrabold text-primary shadow-sm">{product.category}</span></div>
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-xl font-semibold leading-7">{product.name}</h3>
+                <p className="mt-2 w-fit rounded-full bg-sunshine px-3 py-1.5 text-sm font-extrabold text-sunshine-foreground">From {product.price}</p>
                 <p className="mt-3 text-sm leading-6 text-muted-foreground">{product.description}</p>
                 <div className="my-4 border-t border-border/70" />
                 <p className="text-xs leading-5 text-muted-foreground">{product.details}</p>
