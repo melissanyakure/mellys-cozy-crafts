@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { ArrowRight, Heart, Loader2, Mail, Menu, Phone, ShoppingBag, Sparkles, X } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import cardiganModel from "@/assets/cardigan-model.jpeg.asset.json";
 import monochrome from "@/assets/WhatsApp_Image_2026-08-27_at_7.43.16_PM.jpeg.asset.json";
 import { STOREFRONT_QUERY, storefrontApiRequest, formatPrice, type ShopifyProduct } from "@/lib/shopify";
 import { useCartStore } from "@/stores/cartStore";
@@ -30,6 +31,7 @@ function ProductCard({ product, index }: { product: ShopifyProduct; index: numbe
   const isLoading = useCartStore((state) => state.isLoading);
   const { node } = product;
   const image = node.images.edges[0]?.node;
+  const imageUrl = node.handle === "rust-cream-granny-square-cardigan" ? cardiganModel.url : image?.url;
   const variant = node.variants.edges[0]?.node;
 
   const handleAddToCart = async (e: React.MouseEvent) => {
@@ -49,11 +51,11 @@ function ProductCard({ product, index }: { product: ShopifyProduct; index: numbe
   return (
     <article className="stitch-card group flex flex-col overflow-hidden bg-card">
       <Link to="/product/$handle" params={{ handle: node.handle }} className="relative block aspect-[4/3] overflow-hidden bg-muted">
-        {image && (
+        {imageUrl && (
           <img
-            src={image.url}
-            alt={image.altText || node.title}
-            className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.025]"
+            src={imageUrl}
+            alt={image?.altText || node.title}
+            className="h-full w-full object-contain object-center"
             loading={index < 3 ? "eager" : "lazy"}
           />
         )}
@@ -134,7 +136,7 @@ function Index() {
             </div>
           </div>
           <div className="hero-photo-frame relative mx-auto w-full max-w-[510px] p-2.5">
-            <img src={monochrome.url} alt="Melissa modeling a white crochet lace top and striped skirt" className="aspect-[4/5] w-full rounded-[1.35rem] object-cover object-center" />
+            <img src={monochrome.url} alt="Melissa modeling a white crochet lace top and striped skirt" className="aspect-[4/5] w-full rounded-[1.35rem] object-contain object-center" />
           </div>
         </div>
       </section>

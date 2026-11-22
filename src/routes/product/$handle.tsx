@@ -10,10 +10,12 @@ import { CartDrawer } from "@/components/CartDrawer";
 export const Route = createFileRoute("/product/$handle")({
   head: () => ({
     meta: [
-      { title: "Product — Melissa's Cozy Crafts" },
-      { name: "description", content: "Handmade crochet piece by Melissa's Cozy Crafts, made to order in Kenya." },
-      { property: "og:title", content: "Product — Melissa's Cozy Crafts" },
-      { property: "og:description", content: "Handmade crochet piece by Melissa's Cozy Crafts, made to order in Kenya." },
+      { title: "Handmade Crochet Product — Melissa's Cozy Crafts" },
+      { name: "description", content: "View photos, details, and availability for handmade crochet pieces by Melissa Nyakure." },
+      { property: "og:title", content: "Handmade Crochet Product — Melissa's Cozy Crafts" },
+      { property: "og:description", content: "View photos, details, and availability for handmade crochet pieces by Melissa Nyakure." },
+      { property: "og:type", content: "product" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: ProductPage,
@@ -76,7 +78,7 @@ function ProductPage() {
                 <img
                   src={data.images.edges[selectedImage]?.node.url}
                   alt={data.images.edges[selectedImage]?.node.altText || data.title}
-                  className="aspect-square w-full object-cover"
+                  className="aspect-square w-full object-contain"
                 />
               </div>
               {data.images.edges.length > 1 && (
@@ -87,7 +89,7 @@ function ProductPage() {
                       onClick={() => setSelectedImage(i)}
                       className={`h-20 w-20 overflow-hidden rounded-xl border-2 ${i === selectedImage ? "border-primary" : "border-border"}`}
                     >
-                      <img src={img.node.url} alt={img.node.altText || data.title} className="h-full w-full object-cover" />
+                      <img src={img.node.url} alt={img.node.altText || data.title} className="h-full w-full object-contain" />
                     </button>
                   ))}
                 </div>
