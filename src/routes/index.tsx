@@ -4,7 +4,7 @@ import { ArrowRight, Heart, Loader2, Mail, Menu, Phone, ShoppingBag, Sparkles, X
 import { useState } from "react";
 import { toast } from "sonner";
 import cardiganModel from "@/assets/cardigan-model.jpeg.asset.json";
-import monochrome from "@/assets/WhatsApp_Image_2026-08-27_at_7.43.16_PM.jpeg.asset.json";
+import coverImage from "@/assets/ocean-blue-set-cover.png.asset.json";
 import { STOREFRONT_QUERY, storefrontApiRequest, formatPrice, type ShopifyProduct } from "@/lib/shopify";
 import { useCartStore } from "@/stores/cartStore";
 import { CartDrawer } from "@/components/CartDrawer";
@@ -136,7 +136,7 @@ function Index() {
             </div>
           </div>
           <div className="hero-photo-frame relative mx-auto w-full max-w-[510px] p-2.5">
-            <img src={monochrome.url} alt="Melissa modeling a white crochet lace top and striped skirt" className="aspect-[4/5] w-full rounded-[1.35rem] object-contain object-center" />
+            <img src={coverImage.url} alt="Melissa wearing the blue crochet two-piece set" className="aspect-[4/5] w-full rounded-[1.35rem] object-contain object-center" />
           </div>
         </div>
       </section>

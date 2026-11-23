@@ -7,6 +7,7 @@
 - [x] Verify the updated storefront on desktop and mobile.
 - [x] Replace the Rust & Cream Granny Square Cardigan image with the newly provided photo.
 - [x] Show complete product photos in collection cards and product pages.
+- [x] Use the newest uploaded photo as the main cover image and keep all photos fully visible within their frames.
 - [ ] Hide the “Edit with Lovable” badge (requires Pro plan and editor access).
 
 ## Shopify store (done)
