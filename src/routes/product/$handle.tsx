@@ -78,7 +78,7 @@ function ProductPage() {
                 <img
                   src={data.images.edges[selectedImage]?.node.url}
                   alt={data.images.edges[selectedImage]?.node.altText || data.title}
-                  className="aspect-square w-full object-contain"
+                  className="block h-auto w-full object-contain"
                 />
               </div>
               {data.images.edges.length > 1 && (
@@ -87,9 +87,9 @@ function ProductPage() {
                     <button
                       key={i}
                       onClick={() => setSelectedImage(i)}
-                      className={`h-20 w-20 overflow-hidden rounded-xl border-2 ${i === selectedImage ? "border-primary" : "border-border"}`}
+                      className={`w-20 flex-none overflow-hidden rounded-xl border-2 ${i === selectedImage ? "border-primary" : "border-border"}`}
                     >
-                      <img src={img.node.url} alt={img.node.altText || data.title} className="h-full w-full object-contain" />
+                      <img src={img.node.url} alt={img.node.altText || data.title} className="block h-auto w-full object-contain" />
                     </button>
                   ))}
                 </div>

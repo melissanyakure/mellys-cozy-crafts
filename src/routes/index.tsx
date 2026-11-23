@@ -50,12 +50,12 @@ function ProductCard({ product, index }: { product: ShopifyProduct; index: numbe
 
   return (
     <article className="stitch-card group flex flex-col overflow-hidden bg-card">
-      <Link to="/product/$handle" params={{ handle: node.handle }} className="relative block aspect-[4/3] overflow-hidden bg-muted">
+      <Link to="/product/$handle" params={{ handle: node.handle }} className="relative block overflow-hidden bg-muted">
         {imageUrl && (
           <img
             src={imageUrl}
             alt={image?.altText || node.title}
-            className="h-full w-full object-contain object-center"
+            className="block h-auto w-full object-contain object-center"
             loading={index < 3 ? "eager" : "lazy"}
           />
         )}
@@ -136,7 +136,7 @@ function Index() {
             </div>
           </div>
           <div className="hero-photo-frame relative mx-auto w-full max-w-[510px] p-2.5">
-            <img src={coverImage.url} alt="Melissa wearing the blue crochet two-piece set" className="aspect-[4/5] w-full rounded-[1.35rem] object-contain object-center" />
+            <img src={coverImage.url} alt="Melissa wearing the blue crochet two-piece set" className="block h-auto w-full rounded-[1.35rem] object-contain object-center" />
           </div>
         </div>
       </section>
