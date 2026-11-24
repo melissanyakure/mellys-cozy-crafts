@@ -10,6 +10,7 @@
 - [x] Use the newest uploaded photo as the main cover image and keep all photos fully visible within their frames.
 - [x] Match every shop and product-page photo frame to the photo's proportions so full images fit without cropping or empty side bands.
 - [x] Keep every “Add to basket” icon horizontally aligned beside its text across product cards and product pages.
+- [x] Align “Add to basket” buttons to the same bottom line across product cards.
 - [ ] Hide the “Edit with Lovable” badge (requires Pro plan and editor access).
 
 ## Shopify store (done)

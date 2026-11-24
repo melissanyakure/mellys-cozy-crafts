@@ -71,15 +71,17 @@ function ProductCard({ product, index }: { product: ShopifyProduct; index: numbe
           {formatPrice(node.priceRange.minVariantPrice.amount, node.priceRange.minVariantPrice.currencyCode)}
         </p>
         <p className="mt-3 line-clamp-3 text-sm leading-6 text-muted-foreground">{node.description}</p>
-        <button
-          type="button"
-          onClick={handleAddToCart}
-          disabled={isLoading || !variant?.availableForSale}
-          className="mt-5 inline-flex min-h-11 flex-nowrap items-center justify-center gap-2 whitespace-nowrap rounded-full bg-primary px-5 text-sm font-bold text-primary-foreground shadow-[var(--shadow-button)] transition-colors hover:bg-primary-hover disabled:opacity-50"
-        >
-          {isLoading ? <Loader2 size={15} className="shrink-0 animate-spin" /> : <ShoppingBag size={15} className="shrink-0" />}
-          Add to basket
-        </button>
+        <div className="mt-auto pt-5">
+          <button
+            type="button"
+            onClick={handleAddToCart}
+            disabled={isLoading || !variant?.availableForSale}
+            className="inline-flex min-h-11 w-full flex-nowrap items-center justify-center gap-2 whitespace-nowrap rounded-full bg-primary px-5 text-sm font-bold text-primary-foreground shadow-[var(--shadow-button)] transition-colors hover:bg-primary-hover disabled:opacity-50"
+          >
+            {isLoading ? <Loader2 size={15} className="shrink-0 animate-spin" /> : <ShoppingBag size={15} className="shrink-0" />}
+            Add to basket
+          </button>
+        </div>
       </div>
     </article>
   );
