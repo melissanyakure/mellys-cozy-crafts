@@ -108,9 +108,9 @@ function ProductPage() {
               <button
                 onClick={handleAddToCart}
                 disabled={isLoading || !data.variants.edges[0]?.node.availableForSale}
-                className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/90 disabled:opacity-50"
+                className="mt-8 inline-flex flex-nowrap items-center gap-2 whitespace-nowrap rounded-full bg-primary px-8 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/90 disabled:opacity-50"
               >
-                {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : <ShoppingBag className="h-4 w-4" />}
+                {isLoading ? <Loader2 className="h-4 w-4 shrink-0 animate-spin" /> : <ShoppingBag className="h-4 w-4 shrink-0" />}
                 Add to basket
               </button>
             </div>

@@ -75,9 +75,9 @@ function ProductCard({ product, index }: { product: ShopifyProduct; index: numbe
           type="button"
           onClick={handleAddToCart}
           disabled={isLoading || !variant?.availableForSale}
-          className="mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-primary px-5 text-sm font-bold text-primary-foreground shadow-[var(--shadow-button)] transition-colors hover:bg-primary-hover disabled:opacity-50"
+          className="mt-5 inline-flex min-h-11 flex-nowrap items-center justify-center gap-2 whitespace-nowrap rounded-full bg-primary px-5 text-sm font-bold text-primary-foreground shadow-[var(--shadow-button)] transition-colors hover:bg-primary-hover disabled:opacity-50"
         >
-          {isLoading ? <Loader2 size={15} className="animate-spin" /> : <ShoppingBag size={15} />}
+          {isLoading ? <Loader2 size={15} className="shrink-0 animate-spin" /> : <ShoppingBag size={15} className="shrink-0" />}
           Add to basket
         </button>
       </div>

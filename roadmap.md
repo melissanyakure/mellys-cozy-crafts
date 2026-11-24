@@ -8,7 +8,8 @@
 - [x] Replace the Rust & Cream Granny Square Cardigan image with the newly provided photo.
 - [x] Show complete product photos in collection cards and product pages.
 - [x] Use the newest uploaded photo as the main cover image and keep all photos fully visible within their frames.
-- [ ] Match each photo frame to the photo's proportions so images fill the frame without cropping or empty side bands.
+- [x] Match every shop and product-page photo frame to the photo's proportions so full images fit without cropping or empty side bands.
+- [x] Keep every “Add to basket” icon horizontally aligned beside its text across product cards and product pages.
 - [ ] Hide the “Edit with Lovable” badge (requires Pro plan and editor access).
 
 ## Shopify store (done)
